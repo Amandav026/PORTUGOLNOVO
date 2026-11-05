@@ -1,12 +1,12 @@
-programa{
-	funcao inicio(){
+programa{
+	funcao inicio(){
      inteiro vet[50]
      inteiro i
      inteiro j
      logico repetido
       	
      
-    escreva("--- LEITURA DOS DADOS ---")
+    escreva("--- VETOR 50 ---")
     escreva("\n")
     escreva("\n")
    para(i=0;i<50;i++){
@@ -25,12 +25,15 @@ programa{
          se(vet[i] == vet[j]){
             escreva("O número ", vet[i], " se repete nas posições: ", i, " e ", j)
             repetido = verdadeiro
-         }senao
-      escreva("Não existem números repetidos no vetor.")
+         }
       }
    }
+   se(repetido == falso){
+      escreva("Não existem números repetidos no vetor.")
+   }
+   }
 	}
-}
+
 
          
 
@@ -44,7 +47,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 584; 
+ * @POSICAO-CURSOR = 688; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
